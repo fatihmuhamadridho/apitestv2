@@ -5,6 +5,6 @@
 
 module.exports = {
   env: {
-    MONGO_URI: "mongodb+srv://superadmin:ghatan21@cluster0.r9ib0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    MONGO_URI: "mongodb://superadmin:ghatan21@cluster0-shard-00-00.r9ib0.mongodb.net:27017,cluster0-shard-00-01.r9ib0.mongodb.net:27017,cluster0-shard-00-02.r9ib0.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-218gk5-shard-0&authSource=admin&retryWrites=true&w=majority"
   }
 }

@@ -1,18 +1,17 @@
 const mongoose = require('mongoose');
+const data = require('./data');
+const Data = require('./data');
 
 const MartSchema = new mongoose.Schema({
-    tanggal_beli: {
+    _id: {
         type: String
     },
-    nama_product: {
+    data: [data.schema],
+    total_harga: {
         type: String
-    },
-    harga_product: {
-        type: String
-    },
-    jumlah_product: {
-        type: String
-    },
+    }
+}, {
+    versionKey: false
 })
 
 module.exports = mongoose.models.Mart || mongoose.model('Mart', MartSchema);
